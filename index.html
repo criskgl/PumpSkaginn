@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Cristian K. Gomez Lopez + HW2</title>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <div id="my-tab-example">
+      <div id="my-tabs">
+        <button onclick="openCategory(event, 'my-text-container')" class="tab-button is-visible">T E X T</button>
+        <button onclick="openCategory(event, 'my-image-container')" class="tab-button">I M A G E</button>
+        <button onclick="openCategory(event, 'my-video-container')" class="tab-button">V I D E O</button>
+      </div>
+      <div id="my-contents">
+        <div id="my-text-container" class="example-content">
+          <h1>University of California, Santa Barbara </h1>
+          <p>
+            The University of California, Santa Barbara (commonly referred to as UC Santa Barbara or UCSB) is a public research university in Santa Barbara, California. It is one of the 10 campuses of the University of California system. Tracing its roots back to 1891 as an independent teachers' college, UCSB joined the University of California system in 1944 and is the third-oldest general-education campus in the system.
+
+            UCSB is one of America's Public Ivy universities, a designation that recognizes top public research universities in the U.S. The university is a comprehensive doctoral university, and is organized into five colleges and schools offering 87 undergraduate degrees and 55 graduate degrees. UCSB was ranked 30th among "National Universities", fifth among U.S. public universities, and 37th among Best Global Universities by U.S. News & World Report's 2019 rankings. The university was also ranked 48th worldwide for 2016–17 by the Times Higher Education World University Rankings, and 45th worldwide by the Academic Ranking of World Universities in 2017.
+          </p>
+        </div>
+        <div id="my-image-container" class="example-content">
+          <img id="sb-image" src="https://ucsb.edu/sites/default/files/images/home/UC-Santa-Barbara-Henley-Gate-Hero-700.jpg" alt="campus" srcset="" />
+        </div>
+
+        <div id="my-video-container" class="example-content">
+            <iframe id="video-sb" src="https://www.youtube.com/embed/zCBH0N0s-DY" width="400" height="250"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> 
+      </div>
+    </div>
+  </body>
+  <script>        
+    function openCategory(evt, contentType) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent"
+  tabcontent = document.getElementsByClassName("example-content");
+  //hide them
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  // Get all elements with class="tab-button" and remove the class "is-visible"
+  tablinks = document.getElementsByClassName("tab-button");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" is-visible", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(contentType).style.display = "block";
+  evt.currentTarget.className += " is-visible";
+}
+  </script>
+</html>
