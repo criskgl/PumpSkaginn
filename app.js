@@ -34,7 +34,7 @@ particlesJS('particles-js',
         "polygon": {
           "nb_sides": 5
         },
-        "image": {
+        "circle": {
           "src": "badge.png",
           "width": 2,
           "height": 2
