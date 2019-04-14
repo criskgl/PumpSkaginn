@@ -1,16 +1,3 @@
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
-
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-*/
-
-/* Otherwise just put the config content (json): */
-
 particlesJS('particles-js',
   
   {
@@ -23,21 +10,21 @@ particlesJS('particles-js',
         }
       },
       "color": {
-        "value": "#febe09"
+        "value": "#ffffff"
       },
       "shape": {
-        "type": "image",
+        "type": "circle",
         "stroke": {
-          "width": 3,
+          "width": 0,
           "color": "#000000"
         },
         "polygon": {
           "nb_sides": 5
         },
-        "circle": {
-          "src": "badge.png",
-          "width": 2,
-          "height": 2
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
         }
       },
       "opacity": {
@@ -51,7 +38,7 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 50,
+        "value": 5,
         "random": true,
         "anim": {
           "enable": false,
@@ -63,7 +50,7 @@ particlesJS('particles-js',
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#febe09",
+        "color": "#ffffff",
         "opacity": 0.4,
         "width": 1
       },
@@ -86,7 +73,7 @@ particlesJS('particles-js',
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "attract"
+          "mode": "repulse"
         },
         "onclick": {
           "enable": true,
