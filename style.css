@@ -1,6 +1,6 @@
 /*Body*/
 body{
-	background-color: #00335F;
+	background-color: #003366;
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
 	padding: 0;
@@ -8,7 +8,7 @@ body{
 }
 #particles-js{
 	height: 100%;
-	background: #00335F;
+	background: black;
 }
 
 
@@ -34,7 +34,7 @@ mytab {
   height: 50%;
 
   padding: 1px;  
-  background: #febe09;
+  background: black;
   color: white;
   text-align: center;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
@@ -84,17 +84,16 @@ mytab {
 
 
 #sb-image{
-	max-width:100%;
-	max-height:100%;
+	width:100%;
+	height:auto;
 }
 
 #my-video-container{
 	display: none;
-	margin-top: 10px;
+	margin-top: 0px;
 }
 
 #my-image-container{
-	display: none;
 	margin-top: 10px;
 }
 
